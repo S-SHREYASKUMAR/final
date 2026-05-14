@@ -2,7 +2,7 @@ FROM eclipse-temurin:21-jdk-jammy
 
 WORKDIR /app
 
-COPY HelloWorld.java ./
+COPY ./app
 
 RUN javac HelloWorld.java
 

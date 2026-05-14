@@ -1,7 +1,9 @@
-FROM eclipse-termoir:21-jdk
+FROM eclipse-temurin:21-jdk-jammy
 
 WORKDIR /app
 
-COPY ./app
+COPY HelloWorld.java ./
 
-CMD ["java","Helloworld"]
+RUN javac HelloWorld.java
+
+CMD ["java", "HelloWorld"]
